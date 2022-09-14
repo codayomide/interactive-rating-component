@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#rating-state {
+  background-color: hsl(213deg, 19%, 18%);
+  margin: auto 1.5rem;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+}
+#rating-state h1 {
+  color: hsl(0deg, 0%, 100%);
+}
+#rating-state p {
+  color: hsl(216deg, 12%, 54%);
+}
+#rating-state #star-icon-wrapper {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(149, 158, 172, 0.1);
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+#rating-state #info > * {
+  margin-bottom: 1rem;
+}
+#rating-state #ratings {
+  margin: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#rating-state #ratings button {
+  color: hsl(216deg, 12%, 54%);
+  border: none;
+  background-color: rgba(149, 158, 172, 0.1);
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+#rating-state #ratings button:hover {
+  background-color: hsl(217deg, 12%, 63%);
+  color: hsl(0deg, 0%, 100%);
+}
+#rating-state #ratings button.selected {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(25deg, 97%, 53%);
+}
+#rating-state #submit-btn {
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+  border: none;
+  border-radius: 50px;
+  padding: 1rem;
+  width: 100%;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+#rating-state #submit-btn:hover {
+  color: hsl(25deg, 97%, 53%);
+  background-color: hsl(0deg, 0%, 100%);
+}
+#rating-state #submit-btn:active {
+  opacity: 0.8;
+}
+
+#thank-you-state {
+  background-color: hsl(213deg, 19%, 18%);
+  margin: auto;
+  max-width: 80%;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+}
+#thank-you-state > * {
+  margin-bottom: 1rem;
+}
+#thank-you-state h1 {
+  color: hsl(0deg, 0%, 100%);
+}
+#thank-you-state p {
+  color: hsl(216deg, 12%, 54%);
+}
+#thank-you-state #rating-message {
+  background-color: rgba(149, 158, 172, 0.1);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  color: hsl(25deg, 97%, 53%);
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 473px) {
+  #rating-state,
+#thank-you-state {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 576px) {
+  #rating-state,
+#thank-you-state {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 768px) {
+  #rating-state,
+#thank-you-state {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 992px) {
+  #rating-state,
+#thank-you-state {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #rating-state,
+#thank-you-state {
+    width: 30%;
+  }
+}
+body,
+button {
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+#container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  background-color: hsl(216deg, 12%, 8%);
+}
+
+#main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: hsl(0deg, 0%, 100%);
+}
+.attribution a {
+  color: hsl(25deg, 97%, 53%);
+}/*# sourceMappingURL=style.css.map */

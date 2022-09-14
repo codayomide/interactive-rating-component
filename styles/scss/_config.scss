@@ -1,0 +1,54 @@
+$orange: hsl(25, 97%, 53%);
+
+$white: hsl(0, 0%, 100%);
+$light-grey: hsl(217, 12%, 63%);
+$medium-grey: hsl(216, 12%, 54%);
+$dark-blue: hsl(213, 19%, 18%);
+$very-dark-blue: hsl(216, 12%, 8%);
+
+$weight-regular: 400;
+$weight-bold: 700;
+$font-med: 15px;
+
+@mixin circle {
+    background-color: rgba($light-grey, 0.1);
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+}
+
+@mixin media-xs {
+    @media screen and (min-width: 473px) {
+        @content;
+    }
+}
+
+@mixin media-sm {
+    @media screen and (min-width: 576px) {
+        @content;
+    }
+}
+
+@mixin media-md {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin media-lg {
+    @media screen and (min-width: 992px) {
+        @content;
+    }
+}
+
+@mixin media-xl {
+    @media screen and (min-width: 1200px) {
+        @content;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

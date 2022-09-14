@@ -1,0 +1,75 @@
+#rating-state {
+    background-color: $dark-blue;
+    margin: auto 1.5rem;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    
+
+    h1 {
+        color: $white;
+    }
+
+    p {
+        color: $medium-grey;
+    }
+
+    #star-icon-wrapper {
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include circle;
+    }
+    
+    #info {
+        & > * {
+            margin-bottom: 1rem;
+        }
+    }
+    
+    #ratings {
+        margin: 2rem 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    
+        button {
+            color: $medium-grey;
+            border: none;
+            @include circle;
+            cursor: pointer;
+            transition: all 0.4s ease;
+
+            &:hover {
+                background-color: $light-grey;
+                color: $white;
+            }
+
+            &.selected {
+                color: $white;
+                background-color: $orange;
+            }
+        }
+    }
+    
+    #submit-btn {
+        background-color: $orange;
+        color: $white;
+    
+        border: none;
+        border-radius: 50px;
+        padding: 1rem;
+        width: 100%;
+        cursor: pointer;
+        transition: all 0.4s ease;
+
+        &:hover {
+            color: $orange;
+            background-color: $white;
+        }
+
+        &:active {
+            opacity: 0.8;
+        }
+    }
+}

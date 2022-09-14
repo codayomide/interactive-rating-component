@@ -1,0 +1,34 @@
+@import 'config';
+@import 'rating-state';
+@import 'thank-you-state';
+@import 'responsiveness';
+
+body, 
+button {
+    font-family: sans-serif;
+    font-size: $font-med;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: $very-dark-blue;
+}
+
+#main {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: $white;
+    
+    a {
+        color: $orange;
+    }
+}

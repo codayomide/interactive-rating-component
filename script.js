@@ -1,5 +1,8 @@
 const ratingBtns = document.querySelectorAll('.rating-btn');
-
+const submitBtn = document.querySelector('#submit-btn');
+const ratingState = document.querySelector('#rating-state');
+const thankYouState = document.querySelector('#thank-you-state');
+const choice = document.querySelector('#choice')
 
 // if (ratingBtns[0].classList.contains('selected')) {
 //     ratingBtns[1].classList.remove('selected');
@@ -44,6 +47,16 @@ ratingBtns.forEach(btn => {
         } else {
             btn.classList.add('selected');
         };
-        console.log(btn)
     });
+
+    submitBtn.addEventListener('click', () => {
+        thankYouState.classList.remove('no-display');
+        ratingState.classList.add('no-display');
+
+        let ratingData = btn.innerHTML;
+
+        if (btn.classList.contains('selected')) {
+            choice.innerHTML = ratingData;
+        };
+    })
 });

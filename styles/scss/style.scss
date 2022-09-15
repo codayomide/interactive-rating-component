@@ -5,8 +5,12 @@
 
 body, 
 button {
-    font-family: sans-serif;
+    font-family: 'Overpass', sans-serif;
     font-size: $font-med;
+}
+
+h1 {
+    font-weight: 700;
 }
 
 #container {

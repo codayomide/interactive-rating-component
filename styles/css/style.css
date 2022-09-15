@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -164,8 +165,12 @@
 }
 body,
 button {
-  font-family: sans-serif;
+  font-family: "Overpass", sans-serif;
   font-size: 15px;
+}
+
+h1 {
+  font-weight: 700;
 }
 
 #container {

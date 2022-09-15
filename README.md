@@ -2,6 +2,8 @@
 
 This is a solution to the [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
+<a href="https://codayomide.github.io/interactive-rating-component">Here's the Live link</a>
+
 <!-- ## Table of contents
 
 - [Overview](#overview)

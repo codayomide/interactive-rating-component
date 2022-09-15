@@ -3,7 +3,10 @@
     margin: auto 1.5rem;
     padding: 1.5rem;
     border-radius: 1.5rem;
-    
+
+    &.no-display {
+        display: none;
+    }
 
     h1 {
         color: $white;

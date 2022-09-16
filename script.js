@@ -1,62 +1,27 @@
-const ratingBtns = document.querySelectorAll('.rating-btn');
 const submitBtn = document.querySelector('#submit-btn');
 const ratingState = document.querySelector('#rating-state');
 const thankYouState = document.querySelector('#thank-you-state');
-const choice = document.querySelector('#choice')
+const choice = document.querySelector('#choice');
 
-// if (ratingBtns[0].classList.contains('selected')) {
-//     ratingBtns[1].classList.remove('selected');
-//     ratingBtns[2].classList.remove('selected');
-//     ratingBtns[3].classList.remove('selected');
-//     ratingBtns[4].classList.remove('selected');
-// };
-
-// if (ratingBtns[1].classList.contains('selected')) {
-//     ratingBtns[0].classList.remove('selected');
-//     ratingBtns[2].classList.remove('selected');
-//     ratingBtns[3].classList.remove('selected');
-//     ratingBtns[4].classList.remove('selected');
-// }; 
-
-// if (ratingBtns[2].classList.contains('selected')) {
-//     ratingBtns[0].classList.remove('selected');
-//     ratingBtns[1].classList.remove('selected');
-//     ratingBtns[3].classList.remove('selected');
-//     ratingBtns[4].classList.remove('selected');
-// };
-
-// if (ratingBtns[3].classList.contains('selected')) {
-//     ratingBtns[0].classList.remove('selected');
-//     ratingBtns[1].classList.remove('selected');
-//     ratingBtns[2].classList.remove('selected');
-//     ratingBtns[4].classList.remove('selected');
-// };
-
-// if (ratingBtns[4].classList.contains('selected')) {
-//     ratingBtns[0].classList.remove('selected');
-//     ratingBtns[1].classList.remove('selected');
-//     ratingBtns[2].classList.remove('selected');
-//     ratingBtns[3].classList.remove('selected');
-// };
-
+let ratingBtns = document.querySelectorAll('.rate');
+let rate = 0;
 
 ratingBtns.forEach(btn => {
     btn.addEventListener('click', () => {
-        if (btn.classList.contains('selected')) {
-            btn.classList.remove('selected');
-        } else {
-            btn.classList.add('selected');
-        };
+        rate = btn.innerHTML;
+        ratingBtns.forEach(btn => btn.classList.remove('selected'));
+        btn.classList.add('selected');
     });
-
-    submitBtn.addEventListener('click', () => {
-        thankYouState.classList.remove('no-display');
-        ratingState.classList.add('no-display');
-
-        let ratingData = btn.innerHTML;
-
-        if (btn.classList.contains('selected')) {
-            choice.innerHTML = ratingData;
-        };
-    })
 });
+
+submitBtn.addEventListener('click', rateHandler);
+
+function rateHandler() {
+    if (rate === 0) {
+        alert("Please rate us");
+    } else {
+        choice.innerHTML = rate;
+        ratingState.classList.add('no-display');
+        thankYouState.classList.remove('no-display');
+    };
+};
